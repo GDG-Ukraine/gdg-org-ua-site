@@ -223,7 +223,7 @@ nav ul {
 }
 
 #content {
-	margin: 50px 130px 0;
+	margin: 50px auto 0;
 }
 #map {
 	position: absolute;
@@ -388,12 +388,13 @@ a.more::after {
 }
 
 #content #contacts {
-	width: 1120px;
-	margin: 0 0 0 60px;
+	width: 90%;
+	margin: 0 auto;
 }
 .ch-grid {
-	display: inline-block;
+	display: block;
 	margin: 50px 0 0 0;
+	text-align: center;
 }
 .ch-grid > li {
 	width: 250px;
@@ -401,6 +402,7 @@ a.more::after {
 	display: inline-block;
 }
 .ch-item {
+	margin: 0 auto;
 	width: 220px;
 	height: 220px;
 	text-align: center;
@@ -542,4 +544,116 @@ a.more::after {
 
 	opacity: 1;
 	pointer-events: auto;
+}
+
+@media screen and (max-width: 400px){
+	#menu {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	#footer-global {
+		padding: 0 0;
+	}
+
+	#menu ul a {
+		font-size: 1em;
+	}
+
+	#menu ul li {
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	#header {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#header #logo, #header nav {
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#header nav {
+		text-align: center;
+	}
+
+	#menu li {
+		float: none;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	#logo {
+		width: 300px;
+	}
+}
+
+@media screen and (min-width: 769px){
+	#content #contacts {
+		margin-left: auto;
+		margin-right: auto;
+		width: 628px;
+	}
+}
+
+@media screen and (min-width: 800px){
+
+	#content #contacts {
+		width: 660px;
+	}
+
+	.ch-grid li {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+
+	#content #contacts {
+		width: 784px;
+	}
+
+	.ch-grid {
+		text-align: left;
+		display: inline-block;
+	}
+
+	.ch-grid li {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+@media screen and (min-width: 1200px){
+
+	#content #contacts {
+		width: 1120px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#footer-global {
+		height: 80px;
+	}
+	#footer-local {
+		text-align: center;
+		padding: 0 0;
+		height: 70px;
+		width: auto;
+	}
+
+	#footer-local .right-side {
+		display: block;
+		float: none;
+		margin: 0 auto;
+	}
 }
